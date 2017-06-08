@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="my W3CSS trial">
+  <meta name="keywords" content="W3CSS">
+  <meta name="author" content="laferrari0626">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <style>
+    .myAutoSlides {
+         display: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="w3-container w3-teal">
+    <h1 class="w3-center">my Slideshow</h1>
+  </div>
+  <div class="w3-content"  style="width:800px;">
+    <span>Manual SlideShow</span>
+  
+    <div class="w3-display-container">
+      <img class="mySlides" src="slideShow1.jpg" style="width:100%">
+      <img class="mySlides" src="slideShow2.jpg" style="width:100%">
+      <img class="mySlides" src="slideShow3.jpg" style="width:100%">
+      <img class="mySlides" src="slideShow4.jpg" style="width:100%">
+      <img class="mySlides" src="slideShow5.jpg" style="width:100%">
+    
+      <button class="w3-button w3-green w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-green w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+  </div>
+  <script>
+     var slideIndex = 1;
+     showDivs(slideIndex);
+     function plusDivs(n) {
+       showDivs(slideIndex += n);
+     }
+     function showDivs(n) {
+       var i;
+       var x = document.getElementsByClassName("mySlides");
+       if (n > x.length) {slideIndex = 1}    
+       if (n < 1) {slideIndex = x.length}
+       for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";  
+       }
+     x[slideIndex-1].style.display = "block";  
+     }
+  </script>
+  <h2>HTML slides</h2>
+  <div class="w3-content" style="max-width:400px;">
+    <div class="myAutoSlides w3-container w3-green">
+      <h1>1</h1>
+      <p>w3-container</p>
+      <p>w3-green</p>
+    </div>
+    <img class="myAutoSlides" src="car.jpg" />
+    <div class="myAutoSlides w3-container w3-teal w3-xlarge w3-card-4">
+      <p>3</p>
+      <p>w3-container</p>
+      <p>w3-teal</p>
+      <p>w3-xlarge</p>
+      <p>w3-card-4</p>
+    </div>
+    <img class="myAutoSlides" src="car1.jpg" />
+  </div>
+  <script>
+var slideIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myAutoSlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
+  <div class="w3-container w3-green">
+    <h1>my Slideshow footer</h1>
+  </div>
+  
+</body>
+</html>
