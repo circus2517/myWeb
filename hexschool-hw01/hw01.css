@@ -1,0 +1,263 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+  }
+
+/* main css */
+
+/* header */
+.container{
+    width: 1200px;
+    /*border: 1px black solid;*/
+    margin: 0 auto;
+}
+.header{
+    margin-top: 47px;
+}
+.header-name{
+    font: normal normal normal 80px/94px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+}
+.header-line{
+    border: 2px solid #000000;
+    margin-top: 17px;
+}
+
+/* head img */
+.head-img{
+    margin-top: 48px;
+}
+
+/* profile */
+.profile{
+    margin-top: 48px;
+}
+.profile-title{
+    font: normal normal normal 32px/43px Noto Sans;
+}
+.profile-title span{
+    font: normal normal 500 24px/28px Roboto;
+    color: #a00404;
+    margin-left: 16px;
+}
+.profile-line{
+    border: 1px solid #000000;
+    margin-top: 8px;
+}
+.profile > ul >li{
+    font: normal normal normal 24px/36px Noto Sans;
+}
+.profile-1{
+    margin-top: 16px;
+}
+.profile-2{
+    margin-top: 24px;
+}
+
+/* education */
+.education{
+    margin-top: 82px;
+}
+.education-title{
+    font: normal normal normal 32px/43px Noto Sans;
+}
+.education-title span{
+    font: normal normal 500 24px/28px Roboto;
+    color: #a00404;
+    margin-left: 16px;
+}
+.education-line{
+    border: 1px solid #000000;
+    margin-top: 8px;
+}
+.education p{
+    font: normal normal normal 24px/36px Noto Sans;
+}
+.education-2{
+    margin-top: 24px;
+}
+
+/* skills */
+.skills{
+    height: 474px;
+    margin-top: 72px;
+    padding: 34px 0 36px 0;
+    text-align: center;
+    background: #415165 0% 0% no-repeat padding-box;
+}
+.skills-title-name{
+    font: normal normal 500 32px/45px PingFang TC;
+    color: white;
+}
+.skills-title-name span{
+    font: normal normal 500 24px/28px Roboto;
+    margin-left: 16px;
+    height: 28px;
+}
+.skills-title-line{
+    width: 996px;
+    margin-top: 8px;
+    border: 1px solid #FFFFFF;
+}
+.skills-class{
+    margin-top: 40px;
+    border-left: 1px solid #96A9C4;
+    font: normal normal 300 24px/36px Roboto;
+    color: white;
+    display: inline-block;
+}
+.skills-class > li{
+    height: 28px;
+    margin-bottom: 20px;
+    margin-left: 24px;
+}
+
+/* work */
+.work-title{
+    margin-top: 72px;
+    font: normal normal normal 32px/43px Noto Sans;
+}
+.work-title span{
+    font: normal normal 500 24px/28px Roboto;
+    margin-left: 16px;
+    color: #a00404;
+}
+.work-line{
+    border: 1px solid #000000;
+    margin-top: 8px;
+}
+.work-exp{
+    margin-top: 16px;
+    border-left: 1px solid #96A9C4;
+}
+.work-exp-first{
+    margin-top: 16px;
+    margin-left: 24px;
+    font: normal normal normal 24px/36px Noto Sans;
+}
+.work-exp > li{
+    margin-left: 24px;
+    font: normal normal normal 24px/36px Noto Sans;
+    margin-top: 24px;
+}
+.work-exp > img{
+    margin-top: 8px;
+    margin-left: 24px;
+}
+.work-exp > p{
+    width: 642px;
+    height: 154px;
+    margin-left: 24px;
+    margin-top: 8px;
+    font: normal normal normal 20px/30px Noto Sans;
+}
+.work-exp-last{
+    margin-top: 8px;
+    margin-left: 24px;
+    font: normal normal normal 20px/30px Noto Sans;
+}
+
+/* contact */
+.contact{
+    height: 384px;
+    padding: 24px 0 36px 0;
+    margin-top: 72px;
+    text-align: center;
+    background: #415165 0% 0% no-repeat padding-box;
+}
+.contact-title-name{
+    font: normal normal normal 32px/43px Noto Sans;
+    color: white;
+}
+.contact-title-name span{
+    font: normal normal 500 24px/28px Roboto;
+    margin-left: 16px;
+}
+.contact-title-line{
+    width: 1200px;
+    margin-top: 8px;
+    border: 1px solid #FFFFFF;
+}
+.contact-footer{
+    margin-top: 32px;
+    font: normal normal 300 24px/36px Roboto;
+    color: white;
+}
+.contact-footer > li{
+    margin-top: 16px;
+}
+.contact-footer > li > a{
+    color: white;
+    text-decoration: none;
+}
+.contact-footer > li > a:hover{
+    color: red;
+}
+.contact-footer > li > a:active{
+    color: blue;
+}
+.contact-icon{
+    margin-top: 16px;
+    margin-bottom: 36px;
+}
+.contact-icon > li{
+    display: inline;
+}
+.contact-icon > li > a > img{
+    margin: 0 24px;
+}
