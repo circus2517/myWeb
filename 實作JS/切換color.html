@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Flipper || Simple</title>
+
+    <!-- styles -->
+    
+  </head>
+  <body>
+    <nav>
+      <div class="nav-center">
+        <h4>color flipper</h4>
+        <ul class="nav-links">
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>background color : <span class="color">#f1f5f8</span></h2>
+        <button class="btn btn-hero" id="btn">click me</button>
+      </div>
+    </main>
+    <!-- javascript -->
+    <script>
+        const colors = ["green", "red", "rgba(133,122,200)", "#f15025"];
+        const btn = document.getElementById("btn");
+        const color = document.querySelector(".color");
+
+        btn.addEventListener("click", function () {
+            const randomNumber = getRandomNumber();
+   console.log(randomNumber);
+
+            document.body.style.backgroundColor = colors[randomNumber];
+            color.textContent = colors[randomNumber];
+        });
+
+        // Math.random會回傳一個最小數，介於0到1之間，包含0不包含1
+        // Math.floor會回傳小於等於所給數字的最大整數
+    function getRandomNumber() {
+    return Math.floor(Math.random() * colors.length);
+    }
+    </script>
+  </body>
+</html>
