@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+/* css */
+body{
+    color: #3F5D45;
+}
+a{
+    text-decoration: none;
+    color: #3F5D45;
+    font-weight: bold;
+}
+.container{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 940px;
+    padding: 30px 30px;
+}
+.header-menu{
+    display: flex;
+}
+.header-menu a{
+    padding: 10px 30px 8px 30px;
+}
+.header-menu a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
+
+/* main css */
+.main{
+    width: 940px;
+    display: flex;
+    justify-content: space-between;
+}
+.aside{
+    width: 300px;
+}
+.aside h2{
+    background: #3F5D45;
+    color: #EAF0ED;
+    text-align: center;
+    font-size: 24px;
+    padding: 16px 16px;
+}
+.aside li{
+    margin-bottom: -1px;
+}
+.aside a{
+    font-size: 24px;
+    text-align: center;
+    display: block;
+    padding: 16px 16px;
+    border: 1px solid #EAF0ED;
+}
+.aside a:hover{
+    background: #EAF0ED;
+}
+.productList{
+    width: 620px;
+}
+.productList-card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.productList-card li{
+    width: 300px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.productList-card .tag{
+    position: absolute;
+    background: #3F5D45;
+    color: #EAF0ED;
+    left: 20px;
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+    padding: 16px 10px 16px 10px;
+    font-weight: bold;
+}
+.productList-card .heart{
+    position: absolute;
+    right: 22px;
+    top: 19px;
+}
+.productList-card-content{
+    display: flex;
+    border-bottom: 1px solid #EAF0ED;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    line-height: 56px;
+    font-size: 24px;
+    text-align: center;
+}
+.productList-card-content h2{
+    width: 173px;
+    border-right: 1px solid #EAF0ED;
+}
+.productList-card-content span{
+    width: 127px;
+    font-weight: bold;
+}
+.productList-card .cart{
+    font-size: 24px;
+    text-align: center;
+    line-height: 65px;
+    display: block;
+    background: #EAF0ED;
+}
+
+/* footer */
+.footer{
+    width: 940px;
+}
+.footer-page{
+    margin-top: 30px;
+    display: flex;
+    float: right;
+}
+.footer-page a{
+    display: block;
+    color: #3F5D45;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #EAF0ED;
+    text-align: center;
+    padding: 18px;
+    font-size: 20px;
+}
+.footer-page a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;
+}
