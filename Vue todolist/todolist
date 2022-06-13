@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue todolist 實作</title>
+    <link rel="stylesheet" href="vuetodolist.css">
+</head>
+<body>
+    <div id="tasklist" class="app-container">
+        <h1 class="app-header">Vue Todolist</h1>
+        <div class="add-task">
+            <input type="text" autocomplete="off" placeholder="新增事項" class="task-input" v-model="tasks.name" @keyup.enter="newItem">
+            <input type="submit" class="submit-task" title="新增" @click="newItem">
+        </div>
+        <ul class="task-list">
+            <li class="task-list-item" v-for="task in tasks">
+                <label class="task-list-item-label">
+                    <input type="checkbox">
+                    <span>{{task.name}}</span>
+                </label>
+                <span class="delete-btn" title="刪除" @click="delItem(task)">{{task.del}}</span>
+            </li>
+        </ul>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="vuetodolist.js"></script>
+</body>
+</html>
